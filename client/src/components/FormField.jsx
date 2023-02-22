@@ -4,7 +4,7 @@ export default function FormField({labelName,type,name,placeholder,value,handleC
             <div className="flex items-center gap-2 mb-2">
                 <label
                     htmlFor={name}
-                    className="block text-sm font-medium text-gray-900"
+                    className="block text-sm font-medium text-gray-900 dark:text-white"
                 >   
                     {labelName}
                 </label>
@@ -13,7 +13,7 @@ export default function FormField({labelName,type,name,placeholder,value,handleC
                         <button
                             type="button"
                             onClick={handleSurpriseMe}
-                            className="font-semibold text-xs bg-[#ECECF1] py-1 px-2 rounded-[5px] text-black"
+                            className="font-semibold text-xs bg-[#ECECF1] py-1 px-2 rounded-[5px] dark:bg-white text-black"
                         >   
                             Surprise Me
                         </button>
