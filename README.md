@@ -1,1 +1,1 @@
-# ImageAI (Work in Progress...)
+# ImageAI v0.0.1
