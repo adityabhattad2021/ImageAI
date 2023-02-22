@@ -8,7 +8,7 @@ export default function App() {
 
 	return (
 		<div className={darkMode ? 'dark': ''}>
-			<header className="w-full flex justify-between items-center bg-white dark:bg-gray-700 sm:px-8 px-4 py-4 border-b border-b-[#e6ebf4] dark:border-gray-700 border-gray-200">
+			<header className="w-full flex justify-between items-center bg-white dark:bg-gray-700 sm:px-8 px-4 py-4 border-b border-b-[#e6ebf4] dark:border-gray-900 border-gray-200">
 				<Link to="/">
 					<img
 						src={darkMode ? logoWhite : logo}

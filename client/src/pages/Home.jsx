@@ -21,9 +21,9 @@ export default function Home() {
 
 	async function fetchPosts() {
 		setLoading(true);
-
+		console.log(import.meta.env.VITE_BACKEND_URL);
 		try {
-			const response = await fetch("http://localhost:8080/api/v1/post", {
+			const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/v1/post`, {
 				method: "GET",
 				headers: {
 					"Content-Type": "application/json",
@@ -35,7 +35,8 @@ export default function Home() {
 				setAllPosts(result.data.reverse());
 			}
 		} catch (error) {
-			alert("There was some unexpected error, please refresh the page");
+			alert(error);
+			console.log(error);
 		} finally {
 			setLoading(false);
 		}

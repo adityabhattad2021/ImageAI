@@ -20,7 +20,7 @@ export default function CreatePost() {
 				setGenratingImg(true);
 
 				const response = await fetch(
-					"http://localhost:8080/api/v1/dalle",
+					`${import.meta.env.VITE_BACKEND_URL}/api/v1/dalle`,
 					{
 						method: "POST",
 						headers: {
@@ -52,7 +52,7 @@ export default function CreatePost() {
 		if (form.prompt && form.photo) {
 			try {
 				const response = await fetch(
-					"http://localhost:8080/api/v1/post",
+					`${import.meta.env.VITE_BACKEND_URL}/api/v1/post`,
 					{
 						method: "POST",
 						headers: {
